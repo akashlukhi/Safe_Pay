@@ -2,49 +2,161 @@
 
 <head>
     <title>Your Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/menu.css" rel="stylesheet">
+    <link href="assets/css/form.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1 align="center">Safe Pay</h1>
-    <a href="profile.html">Profile</a>
-    <div align="right">
-        <a href="index.html">Home</a> &nbsp;
-        <a href="index.html#contact">Contact Us</a> &nbsp;
-        <a href="index.html#about">About </a> &nbsp;
-        <a href="index.html#help">Help</a> &nbsp;
-        <a href="login.html">Log In/Sign Up</a>
-    </div>
+	
+	<div class="menu" style="z-index:1000;">
+		<a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
+			Menu</span></a>
+		<a href="login.html">Log In/Sign Up</a>
+		<a href="#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
+		<a href="#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
+		<a href="#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
+		<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
+	</div>
+	<br><br>
+	<div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
+		<div class="overlay-content">
+			<center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
+			&nbsp;<br><br>
+			<a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
+			<a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
+				Payment History</a>
+			<a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change Password</a>
+			<a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
+			<a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i> Check Balance</a>
+			<a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request Money</a>
+			<a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
+					aria-hidden="true"></i>Polices</a>
+		</div>
+	</div>
     <br><br>
     <center>
-        <img src="" height="200" width="200">
-        <table border="0">
-            <tr>
-                <td>name:</td><br><br>
-                <td>Lukhi Akash k.<br><br></td>
-            </tr>
-            <tr>
-                <td> Address: </td>
-                <td>31,Yamuna nagar Soc,Vaniyawad,Nadiad,Gujarat.<br><br></td>
-            </tr>
-            <tr>
-                <td> Email id:</td>
-                <td>aklukhi@gmail.com<br><br></td>
-            </tr>
-            <tr>
-                <td colspan="2"><center><a href="statementpage.html">Payment History<br><br></a></center></td>
+            <img style="border-radius: 50%; width:100px; border:4px solid transparen; border-color:cornflowerblue;" src="assets/img/aboutme.jpg">
+        <table border="0px">
+                <tr>
+                    <td>
+                        <lable>Full Name:</lable>
+                    </td>
+                    <td>
+                        <lable><input type="text" placeholder="Full Name" value="Lukhi Akash"></lable>
+                    </td>
+                    <td style="padding-left:50px">
+                        <lable>Birth Date:</lable>
+                    </td>
+                    <td>
+                        <lable><input type="date" placeholder="birthdate"></lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Bank Name:</lable>
+                    </td>
+                    <td>
+                        <lable><input type="text" name="bnknm" value="Bank Of India"></lable>
+                    </td>
+                    <td style="padding-left:50px">
+                        <lable>Email ID:</lable>
+                    </td>
+                    <td>
+                        <lable><input type="text" placeholder="Linked Email is here"></lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Bank IFSC Code:</lable>
+                    </td>
+                    <td>
+                        <lable><input type="text" name="bnkifsc" value="BOI1342"></lable>
+                    </td>
+                    <td style="padding-left:50px">
+                        <lable>MPIN:</lable>
+                    </td>
+                    <td>
+                        <lable><input type="text" placeholder="MPin created is here"></lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Permenent Address:</lable>
+                    </td>
+                    <td>
+                        <lable><textarea id="w3review" placeholder="Permanent Address" name="addrs" rows="4" cols="50"></textarea>
+                        </lable>
+                    </td>
+                    <td style="padding-left:50px">
+                        <lable>Communication Address:</lable>
+                    </td>
+                    <td>
+                        <lable><textarea id="w3review" placeholder="Communication Address" name="addrs" rows="4"
+                                cols="50"></textarea>
+                        </lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Phone Number:</lable>
+                    </td>
+                    <td>
+                        <lable><input type="text" name="phn" placeholder="Phone Number"></lable>
+                    </td>
+                    <td style="padding-left:50px">
+                        <lable>Account Number:</lable>
+                    </td>
+                    <td>
+                        <lable><input type="text" placeholder="Account Number"></lable>
+                    </td>
+                </tr>
+            </table>
 
-            </tr>
-            <tr>
-                <td colspan="2"><center><a href="">Change Password<br><br></a></center></td>
-            </tr>
-
-            <tr>
-                <td colspan="2"><center><a href="policies.html">Policies<br><br></a></center></td>
-            </tr>
-        </table>
-
-        <button>Apply</button>
-    </center>
+            <button class="btn-sub">Apply</button><br><br>
+        </center>
+    <br><br>
+    <div class="footer" style="background-color: rgb(34, 35, 54); color:white;">
+        <center>
+            <table border="0" width="1400px" height="300px" style="margin-left: 5%">
+                <tr>
+                    <td>
+                        <font size="+3"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</font><br><br>
+                        Got questions about SafePay or the SafePay Gallery?
+                    </td>
+                    <td>
+                        <font size="+3"><i class="fa fa-eercast" aria-hidden="true"></i> Status</font><br><br>
+                        Find out the service status of SafePay and its <br>related services.
+                    </td>
+                    <td>
+                        <br>
+                        <font size="+3"><i class="fa fa-quora" aria-hidden="true"></i> FAQ</font><br><br>
+                        Read the Frequently Asked Questions about SafePay <br>and see if your question made the list.
+                    </td>
+                </tr>
+                <tr>
+                    <br>
+                    <td>
+                        <font size="+10"><i class="fa fa-handshake-o" aria-hidden="true"></i> Safe Pay</font>
+                    </td>
+                    <td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> SafePay E-Wallet 2020
+                        &nbsp;&nbsp;-&nbsp;&nbsp; Devloped By Ak Lukhi&nbsp;&nbsp; - <a style="color: aliceblue"
+                            herf="#about">About</a> - <a style="color: aliceblue;" href="policies.html">Privacy
+                            Policy</a></td>
+                </tr>
+            </table>
+    
+        </center>
+    </div>
+    
+    <script>
+        function openmenu() {
+            document.getElementById("mymenu").style.width = "16%";
+        }
+        function closemenu() {
+            document.getElementById("mymenu").style.width = "0%";
+        }
+    </script>
 </body>
 
 </html>

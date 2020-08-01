@@ -1,28 +1,74 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Log in</title>
+  <title>Log in</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/css/menu.css" rel="stylesheet">
+  <link href="assets/css/form.css" rel="stylesheet">
+</head>
 </head>
 
 <body>
-    <h1 align="center">Safe Pay</h1>
-    <a href="profile.html">Profile</a>
-    <div align="right">
-        <a href="index.html">Home</a> &nbsp;
-        <a href="index.html#contact">Contact Us</a> &nbsp;
-        <a href="index.html#about">About </a> &nbsp;
-        <a href="index.html#help">Help</a> &nbsp;
-        <a href="login.html">Log In/Sign Up</a>
+
+  <div class="menu" style="z-index:1000;">
+    <a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
+      Menu</span></a>
+    <a href="login.html">Log In/Sign Up</a>
+    <a href="#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
+    <a href="#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
+    <a href="#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
+    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
+  </div>
+  <br><br>
+  <div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
+    <div class="overlay-content">
+      <center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
+      &nbsp;<br><br>
+      <a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
+      <a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
+        Payment History</a>
+      <a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
+        Password</a>
+      <a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
+      <a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i> Check
+        Balance</a>
+      <a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request Money</a>
+      <a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry" aria-hidden="true"></i>Polices</a>
     </div>
-    <br><br>
+  </div>
+  <h3 class="title">
+    <span>LOG</span> IN
+  </h3>
+  <div class="box" style="margin-left: 24%">
     <center>
-        <label>User Id:</label>
-        <input name="subject" id="subject" type="text" placeholder="Your id*" required><br><br>
-        <button>Send OTP</button><br><br>
-        <form action="signup.html">
-            <button>Signup</button>
-        </form>
+      <label>Username:</label>
+      <input type="text" name="username" id="username" placeholder="Username" required><br>
+      <label>Password:</label>
+      <input type="password" name="password" id="password" placeholder="Password" required><br>
+    <button class="btn-sub">Log in</button><br><br>
+  
+      <a href="signup.html">Create Account</a>
+      <a href="#">Forget Password?</a>
+      <br><br>
     </center>
+  </div>
+  </div>
+</body>  
+</html>
+
+
+
+
+
+
+  <br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br>
+
+
+
 </body>
 
 </html>

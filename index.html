@@ -2,175 +2,353 @@
 
 <head>
 	<title>Safe Pay</title>
+	<link href="assets/css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="assets/css/menu.css" rel="stylesheet">
 </head>
 
 <body>
-	<h1 align="center">Welcome to Safe Pay</h1>
-	<a href="profile.html">Profile</a>
-	<div align="right">
-		<a href="index.html">Home</a> &nbsp;
-		<a href="#contact">Contact Us</a> &nbsp;
-		<a href="#about">About </a> &nbsp;
-		<a href="#help">Help</a> &nbsp;
+	<div class="header">
+		<h1>Safe Pay</h1>
+		<img style="margin-top: 10px; " src="assets/img/ewallet.jpeg" height="40px" width="180px">
+	</div>
+	<div class="menu" style="z-index:1000;">
+		<a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
+			Menu</span></a>
 		<a href="login.html">Log In/Sign Up</a>
+		<a href="#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
+		<a href="#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
+		<a href="#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
+		<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
 	</div>
 	<br><br>
-	<font size="+2">Money Transer:</font><br><br>
-	<font size="+1">
-		<a href="tocontact.html">To Contact</a>&nbsp;&nbsp;&nbsp;
-		<a href="toaccount.html">To Account</a>&nbsp;&nbsp;&nbsp;
-		<a href="toself.html">To Self</a>&nbsp;&nbsp;&nbsp;
-		<a href="check_bal.html">Check Balance</a>&nbsp;&nbsp;&nbsp;
-		<a href="toreq.html">Request</a>&nbsp;&nbsp;&nbsp;
-		<br><br><br><br></font>
-	<font size="+2">Recharge and Bill Pay:</font>
+	<div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
+		<div class="overlay-content">
+			<center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
+			&nbsp;<br><br>
+			<a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
+			<a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
+				Payment History</a>
+			<a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change Password</a>
+			<a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
+			<a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i> Check Balance</a>
+			<a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request Money</a>
+			<a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
+					aria-hidden="true"></i>Polices</a>
+		</div>
+	</div>
 	<br><br>
 	<center>
-		<table border="2" height="150" width="1000">
-			<tr>
-				<td><a href="mobile_recharge.html">Mobile Recharge</a></td>
-				<td><a href="bus_ticket.html">Bus Ticket</a></td>
-				<td><a href="train_ticket.html">Train Ticket</a></td>
-				<td><a href="movie_ticket.html">Movie Ticket</a></td>
-			</tr>
-			<tr>
-				<td><a href="electricity_bill.html">Electricity Bill</a></td>
-				<td><a href="water_bill.html">Watter Bill</a></td>
-				<td><a href="card_bill.html">Credit card Bill</a></td>
-				<td><a href="gas_bill.html">Piped Gas</a></td>
-			</tr>
-		</table>
+
+		<h3 class="title">
+			<span>Recharge &</span>
+			Bill Pay
+		</h3>
+		<div class="box">
+			<center>
+				&nbsp;&nbsp;&nbsp;<img src="assets/img/mobile.jpg" height="90px" width="80px"
+					style="margin-right:30px"><br><br>
+				<p style="margin-right: 8px">A prepaid mobile device is a mobile device such as a phone for which credit
+					is purchased in advance of service use.</p><br><br>
+				<button class="btn"><a href="mobile_recharge.html"><b>Mobile Recharge</b></a></button>
+			</center>
+		</div>
+		<div class="box">
+			<center>
+				&nbsp;&nbsp;&nbsp;
+				<img src="assets/img/bus.PNG" height="90px" width="80px" style="margin-right:30px"><br><br>
+				<p style="margin-right: 8px">Book bus tickets online from SafePay booking bus
+					operators. Choose your bus ticket booking and enjoy.</p><br><br>
+				<button class="btn"><a href="bus_ticket.html"><b>Bus Ticket</b></a></button>
+			</center>
+		</div>
+		<div class="box">
+			<center>
+				&nbsp;&nbsp;&nbsp;
+				<img src="assets/img/train.jpg" height="90px" width="100px" style="margin-right:30px"><br><br>
+				<p style="margin-right: 8px">Enjoy free meal by booking IRCTC train tickets with SafePay and have the
+					Happy journy.</p><br><br>
+				<button class="btn"><a href="train_ticket.html"><b>Train Ticket</b></a></button>
+			</center>
+		</div>
+		<div class="box">
+			<center>
+				&nbsp;&nbsp;&nbsp;
+				<img src="assets/img/movie.jpg" height="90px" width="110px" style="margin-right:30px"><br><br>
+				<p style="margin-right: 8px">Online Movie Ticket Booking enable user to buy movie tickets online and
+					information about cinemas.</p><br><br>
+				<button class="btn"><a href="movie_ticket.html"><b>Movie Ticket</b></a></button>
+			</center>
+		</div>
+		<div class="box">
+			<center>
+				&nbsp;&nbsp;&nbsp;<img src="assets/img/bulb.jpg" height="90px" width="90px"
+					style="margin-right:30px"><br><br>
+				<p style="margin-right: 8px">Electronic bill payment is a feature of mobile banking. In addition
+					to the bill payment facility.</p> <br><br>
+				<button class="btn"><a href="electricity_bill.html"><b>Electricity Bill</b></a></button>
+			</center>
+		</div>
+		<div class="box">
+			<center>
+				&nbsp;&nbsp;&nbsp;
+				<img src="assets/img/water.jpg" height="90px" width="80px" style="margin-right:30px"><br><br>
+				<p style="margin-right: 8px">No more delays in bill payment, pay water bill online here. SafePay offers
+					you
+					the secure payment platform.</p><br><br>
+				<button class="btn"><a href="water_bill.html"><b>Watter Bill</b></a></button>
+			</center>
+		</div>
+		<div class="box">
+			<center>
+				&nbsp;&nbsp;&nbsp;
+				<img src="assets/img/credit.jpg" height="90px" width="110px" style="margin-right:30px"><br><br>
+				<p style="margin-right: 8px">Make Online Credit Card Payment at SafePay. Don't worry about your due
+					dates for Credit Card bill payment.</p><br><br>
+				<button class="btn"><a href="card_bill.html"><b>Credit card Bill</b></a></button>
+			</center>
+		</div>
+		<div class="box">
+			<center>
+				&nbsp;&nbsp;&nbsp;
+				<img src="assets/img/pipe.jpg" height="90px" width="100px" style="margin-right:30px"><br><br>
+				<p style="margin-right: 8px">No more delays in bill payment, pay gas bill online here. SafePay offers
+					you
+					the secure payment platform.</p><br><br>
+				<button class="btn"><a href="gas_bill.html"><b>Piped Gas Bill</b></a></button>
+			</center>
+		</div>
 		<br><br><br><br><br><br><br>
 	</center>
 	<center>
 		<section id="help">
-		<table border="0">
-			<tr>
-				<td>
-					<center>
-						<font size="+2">24x7 Help</font><br><br>
-						Have a query and need help?<br> Click here.
-					</center>
-				</td>
-				<td></td>
-				<td></td>
-				<td>
-					<center>
-						<font size="+2">Safepay Trust</font><br><br>
-						Your money is yours! All refunds come<br> with no question asked guarantee.
-					</center>
-				</td>
-				<td></td>
-				<td></td>
-				<td>
-					<center>
-						<font size="+2">100% Assurance</font><br><br>
-						At Safepay, we provide 100% assurance.<br> If you have any issue, your<br> money is immediately
-						refunded.
-					</center>
-				</td>
-				<td></td>
-				<td></td>
-				<td>
-					<center>
-						<font size="+2">Our Promise</font><br><br>
-						Happiness is guaranteed at Safepay. <br>If we fall short of your expectations, <br>give us a
-						shout.
-					</center>
-				</td>
-			</tr>
-		</table>
-		<br><br><br><br>
-		<table border="0">
+			<br><br><br><br>
+			<hr>
+			<div class="parallax">
+				<table border="0" width="1350px">
+					<tr>
+						<td>
+							<center>
+								<img src="assets/img/wallet.jpg" style="border-radius: 50%; width:100px"><br><br>
+								<font size="+2"><b>Wallets</b></font><br><br>
+								850
+							</center>
+						</td>
+						<td>
+							<center>
+								<img src="assets/img/transfer.jpg" style="border-radius: 50%; width:100px	"><br><br>
+								<font size="+2"><b>Transections</b></font><br><br>
+								3250
+							</center>
+						</td>
+						<td>
+							<center>
+								<img src="assets/img/operator.jpg" style="border-radius: 50%; width:100px	"><br><br>
+								<font size="+2"><b>Operators</b></font><br><br>
+								132
+							</center>
+						</td>
+						<td>
+							<center>
+								<img src="assets/img/group.jpg" style="border-radius: 50%; width:100px	"><br><br>
+								<font size="+2"><b>Clients</b></font><br><br>
+								624
+							</center>
+						</td>
+					</tr>
+				</table>
+			</div><br><br><br>
+			<h3 class="title">
+				<span>
+					Our
+				</span>
+				Services
+			</h3>
+			<table class="help-desk" border="0" style="margin-top: 40px;">
 				<tr>
 					<td>
 						<center>
-							<font size="+2">Wallets</font><br><br>
-							850
+							<font size="+2">24x7 Help</font><br><br>
+							Have a query and doubt you need help?<br> Click here.
 						</center>
 					</td>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+
 					<td>
 						<center>
-							<font size="+2">Transections</font><br><br>
-							3250
+							<font size="+2">Safepay Trust</font><br><br>
+							Your money is yours! All refunds come<br> with no question asked guarantee.
 						</center>
 					</td>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+
 					<td>
 						<center>
-							<font size="+2">Operators</font><br><br>
-							132
+							<font size="+2">100% Assurance</font><br><br>
+							At Safepay, we provide 100% assurance.<br> If you have any issue, your<br> money is
+							immediately
+							refunded.
 						</center>
 					</td>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+
 					<td>
 						<center>
-							<font size="+2">Clients</font><br><br>
-							624
+							<font size="+2">Our Promise</font><br><br>
+							Happiness is guaranteed at Safepay. <br>If we fall short of your expectations, <br>give us a
+							shout.
 						</center>
 					</td>
 				</tr>
 			</table>
-	</section>
-		<br><br><br><br>
-		<section id="contact">
-				<font size="+3">Getin Touch</font><br>
-				<br>
-	
-				<br>
-	
+		</section>
+		<br><br>
+
+		<section id="contact" style="margin-top: 20px;">
+			<br><br>
+			<hr>
+			<h3 class="title">
+				<span>Get</span>
+				In Touch
+			</h3>
+
 			<table>
 				<tr>
-					<td>
+					<td align="center">
+						<div style="margin-left: 10px"><img src="assets/img/phone.svg" height="60px" width="60px"></div>
+						<br>
 						<font size="+2">Call Us On</font><br>
 						+91 96325 55555<br>
 					</td>
-					<td></td><td></td><td></td><td></td>
-					<td>
-						<center><font size="+2">Visit Office</font><br></center>
+
+
+					<td align="center">
+						<center>
+							<div style="margin-left: 500px"></div><img src="assets/img/location.svg" height="60px"
+								width="60px"><br><br>
+							<font size="+2">Visit Office</font><br>
+						</center>
 						DDU,Nadiad,Gujarat,India.<br>
 					</td>
-					<td></td><td></td><td></td><td></td>
-					<td>
+
+
+					<td align="center">
 						<br>
+						<img src="assets/img/send.svg" height="60px" width="60px"><br><br>
 						<font size="+2">Email Us At</font><br>
 						aklukhi@gmail.com<br><br>
 					</td>
 				</tr>
 			</table>
-			
 			<br>
-
-			<br>
-			Name:
-			<input name="name" id="name" type="text" placeholder="Your Name*" required><br>
-			<br>Email:
-			<input name="email" id="email" type="email" placeholder="Your Email*" required><br>
-			<br>Subject:
-			<input name="subject" id="subject" type="text" placeholder="Your Subject*" required><br>
-			<br>Message:
-			<textarea name="comments" id="comments" rows="4" placeholder="Your message..."></textarea><br><br>
-			<a href="\">Send Message</a>
+			<table>
+				<tr>
+					<td align="center"><input name="name" id="name" type="text" placeholder="Your Name*" required></td>
+					<td align="center"><input name="email" id="email" type="email" placeholder="Your Email*" required>
+					</td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr>
+					<td colspan="2"><input name="subject" style="width: 96%" id="subject" type="text"
+							placeholder="Your Subject*" required></td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr>
+					<td colspan="2"><textarea name="comments" style="width: 96%" id="comments" rows="4"
+							placeholder="Your message..."></textarea></td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr>
+					<td colspan="2" align="center"><button class="btn-sub">Send Feedback</button></td>
+				</tr>
+			</table>
 
 		</section>
 
 
-		<br><br><br><br>
+		<br><br>
+		<hr>
+
 		<section id="about">
-			<h2>About Me </h2>
-			<p>Name : Lukhi Akash K. </p>
-			<p>Birthday : 5 January 2001 </p>
-			<p>Phone : 63530 01311 </p>
-			<p>City : Surat, Gujarat </p>
-			<p>Age : 19 </p>
-			<p>Degree : B-Tech </p>
-			<p>Mail : aklukhi@gmail.com </p>
-			<p>Freelance : Available</p>
+			<br><br>
+			<h3 class="title">
+				<span>About</span>
+				Me
+			</h3>
+			<table border="0" height="280px">
+				<tr>
+					<td>
+						<img style="margin-left: -10px" src="assets/img/spaylogo.png">
+					</td>
+
+					<td>
+						<div style="margin-left: 100px">
+							<font size="+1">
+								Safe Pay (stylized as S Pay; formerly Pay with Safe and Android Pay) is a digital
+								wallet<br><br>
+
+								platform and online payment system developed by Safe to power in-app and
+								tap-to-pay<br><br>
+
+								purchases on mobile devices, enabling users to make payments with Android phones,
+								tablets<br><br>
+
+								or computers. In addition to this, the service also supports passes, Bill pays, event
+								tickets,<br><br>
+
+								movie tickets, public transportation tickets, store cards, and mobile Recharge.
+							</font>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+
 		</section>
+		<br><br><br><br>
 	</center>
-	<br><br><br><br><br><br><br><br><br><br>
-	<font size="+9">Copyright Disclaimer...........</font>
+	<br>
+	<div class="footer" style="background-color: rgb(34, 35, 54); color:white;">
+		<center>
+			<table border="0" width="1400px" height="300px" style="margin-left: 5%">
+				<tr>
+					<td>
+						<font size="+3"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</font><br><br>
+						Got questions about SafePay or the SafePay Gallery?
+					</td>
+					<td>
+						<font size="+3"><i class="fa fa-eercast" aria-hidden="true"></i> Status</font><br><br>
+						Find out the service status of SafePay and its <br>related services.
+					</td>
+					<td>
+						<br>
+						<font size="+3"><i class="fa fa-quora" aria-hidden="true"></i> FAQ</font><br><br>
+						Read the Frequently Asked Questions about SafePay <br>and see if your question made the list.
+					</td>
+				</tr>
+				<tr>
+					<br>
+					<td>
+						<font size="+10"><i class="fa fa-handshake-o" aria-hidden="true"></i> Safe Pay</font>
+					</td>
+					<td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> SafePay E-Wallet 2020
+						&nbsp;&nbsp;-&nbsp;&nbsp; Devloped By Ak Lukhi&nbsp;&nbsp; - <a style="color: aliceblue"
+							herf="#about">About</a> - <a style="color: aliceblue;" href="policies.html">Privacy
+							Policy</a></td>
+				</tr>
+			</table>
+
+		</center>
+	</div>
+
+	<script>
+		function openmenu() {
+			document.getElementById("mymenu").style.width = "16%";
+		}
+		function closemenu() {
+			document.getElementById("mymenu").style.width = "0%";
+		}
+	</script>
 </body>
 
 </html>
