@@ -12,7 +12,7 @@ function validate() {
     var chkacc = pattern.test(acc);
     
     if ((chkphn == true) && (chkacc == true) && (pass == repass) && (String(pass).length >= 8)) {
-         window.location.replace = "https://akashlukhi123.github.io/Safe_Pay/index.html";
+         window.location.href = "index.html";
     }
     else { 
         console.log("provide correct informations");
