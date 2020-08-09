@@ -1,14 +1,22 @@
+var formx = document.getElementById("myform");
+
 function validate() {
-
-
+    
     var phn = document.getElementById("phone").value;
+    var pass = document.getElementById("password").value;
+    var repass = document.getElementById("re-password").value;
+    var acc = document.getElementById("account").value;
     var patt = /^\d{10}$/;
     var chkphn = patt.test(phn);
-
-    if (chkphn == true) {
-        window.location.href = "index.html";
+    var pattern = /^\d{14}$/;
+    var chkacc = pattern.test(acc);
+    
+    if ((chkphn == true) && (chkacc == true) && (pass == repass) && (String(pass).length >= 8)) {
+         window.location.href = "index.html";
     }
-    else { }
+    else { 
+        console.log("provide correct informations");
+    }
 }
 
 function phonevalidate() {
