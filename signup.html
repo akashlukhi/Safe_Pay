@@ -42,7 +42,7 @@
     <h3 class="title">
         <span>SIGN</span> UP</h3>
     <center>
-        <form name="myform" id="myform"  method="POST">
+        <form  id="myform" action="./index.html" onsubmit="return validate()">
             <div class="box">
                 <table align="center">
                     <tr>
@@ -58,8 +58,8 @@
                         <td><label for="password"><b>Password:</b></label></td>
                         <td><input type="password" placeholder="Enter Password" id="password" required
                                 onchange="passwordvalidate()" /><br>
-                                <div id="pass-p">
-                                    <p></p>
+                                <div >
+                                    <p id="pass-p" style="color:red; font-size: 11pt; display: none;" >Password must be at least 8 digit*</p>
                                 </div><br>
                         </td>
                     </tr>
@@ -67,8 +67,8 @@
                         <td><label for="Re-password"><b>Re-Enter Password:</b></label></td>
                         <td><input type="password" placeholder="Re-Enter Password" id="re-password" required
                                 onchange="repasswordvalidate()" /><br>
-                                <div id="repass-p">
-                                    <p></p>
+                                <div >
+                                    <p id="repass-p" style="color:red; font-size: 11pt; display: none;">Both Passwords are Not Same*</p>
                                 </div><br>
                         </td>
                     </tr>
@@ -76,8 +76,8 @@
                         <td><label for="phn"><b>Phone Number:</b></label></td>
                         <td><input type="text" placeholder="Enter phone number" id="phone" required
                                 onchange="phonevalidate()"><br>
-                            <div id="phone-p">
-                                <p></p>
+                            <div >
+                                <p id="phone-p" style="color:red; font-size: 11pt; display: none;">Mobile Number must be 10 digit*</p>
                             </div><br>
                         </td>
                     </tr>
@@ -99,8 +99,8 @@
                         <td><label for="accn"><b>Account Number:</b></label></td>
                         <td><input type="text" placeholder="Enter Account Number" id="account" required
                                 onchange="accountvalidate()"><br>
-                            <div id="account-p">
-                                <p></p>
+                            <div >
+                                <p id="account-p" style="color:red; font-size: 11pt; display: none;" >Account Number must be 14 digit*</p>
                             </div><br>
                         </td>
                     </tr>
@@ -114,7 +114,7 @@
                         <td><input type="file" id="img" name="img" accept="image/*"><br><br></td>
                     </tr>
                 </table> <br><br>
-                <button type="submit" id="submit" class="btn-sub"  onclick="validate()">Signup</button><br><br>
+                <button  id="submit" type="submit" class="btn-sub"  onclick="validate()">Signup</button><br><br>
             </div>
         </form>
 
