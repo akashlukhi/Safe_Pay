@@ -37,7 +37,29 @@
 					aria-hidden="true"></i>Polices</a>
 		</div>
 	</div>
-	<br><br>
+	
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<img src="./assets/img/slide1.jpg.webp" style="width:100%; height: 550px;background-size: cover;">			
+		</div>
+
+		<div class="mySlides fade">
+			<img src="./assets/img/slide2.jpg" style="width:100%; height: 550px;background-size: cover;">			
+		</div>
+
+		<div class="mySlides fade">
+			<img src="./assets/img/slide3.jpg" style="width:100%; height: 550px;background-size: cover;">			
+		</div>
+
+	</div>
+	<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<br><br>
+ 
 	<center>
 
 		<h3 class="title">
@@ -342,11 +364,29 @@
 	</div>
 
 	<script>
+			var slideIndex = 0;
+		showSlides();
 		function openmenu() {
 			document.getElementById("mymenu").style.width = "16%";
 		}
 		function closemenu() {
 			document.getElementById("mymenu").style.width = "0%";
+		}
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 5000); 
 		}
 	</script>
 </body>

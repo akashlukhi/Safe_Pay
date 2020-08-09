@@ -5,80 +5,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/css/menu.css" rel="stylesheet">
     <link href="assets/css/form.css" rel="stylesheet">
+    <script src="./assets/JavaScript/recharge.js"></script>
 </head>
 
 <body>
-	
-	<div class="menu" style="z-index:1000;">
-		<a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
-			Menu</span></a>
-		<a href="login.html">Log In/Sign Up</a>
-		<a href="#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
-		<a href="#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
-		<a href="#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
-		<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
-	</div>
-	<br><br>
-	<div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
-		<div class="overlay-content">
-			<center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
-			&nbsp;<br><br>
-			<a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
-			<a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
-				Payment History</a>
-			<a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change Password</a>
-			<a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
-			<a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i> Check Balance</a>
-			<a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request Money</a>
-			<a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
-					aria-hidden="true"></i>Polices</a>
-		</div>
-	</div>
+
+    <div class="menu" style="z-index:1000;">
+        <a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
+            Menu</span></a>
+        <a href="login.html">Log In/Sign Up</a>
+        <a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
+        <a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
+        <a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
+    </div>
+    <br><br>
+    <div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
+        <div class="overlay-content">
+            <center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
+            &nbsp;<br><br>
+            <a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
+            <a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
+                Payment History</a>
+            <a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
+                Password</a>
+            <a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
+            <a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
+                Check Balance</a>
+            <a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
+                Money</a>
+            <a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
+                    aria-hidden="true"></i>Polices</a>
+        </div>
+    </div>
     <h3 class="title">
-            <span>Online Mobile</span> Recharge
-        </h3>
+        <span>Online Mobile</span> Recharge
+    </h3>
     <center>
-            <div class="box">
+        <div class="box">
             <input type="radio" name="mode" id="pre-paid">Pre-Paid&nbsp;
             <input type="radio" name="mode" id="post-paid">Post-Paid<br><br>
-        <table border="0">
-            <tr>
-                <td>
-                    <label>Mobile No:</label>
-                </td>
-                <td>
-                    <input id="number" type="text" placeholder="Your Mobile no*" required><br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Amount:</label>
-                </td>
-                <td>
-                    <input type="number" id="amount" placeholder="Enter Ammount"><br><br>
-                </td>
-            </tr>
-        </table>
-        Debitted from:<br><br>
-        <table>
-            <tr>
-                <td>
-                    Wallet
-                </td>
-                <td>
-                    <input type="radio" id="from" name="wallet">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Bank Account
-                </td>
-                <td>
-                    <input type="radio" id="from" name="bank">
-                </td>
-            </tr>
-        </table><br>
-        <button  class="btn-sub">Procced</button><br><br></div>
+            <table border="0">
+                <tr>
+                    <td><label for="phn">Phone Number:</label></td>
+                    <td><input type="text" placeholder="Enter phone number" id="phone" required
+                            onchange="phonevalidate()"><br>
+                        <div id="phone-p">
+                            <p></p>
+                        </div><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Amount:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="amount" placeholder="Enter Ammount"><br><br>
+                    </td>
+                </tr>
+            </table>
+            Debitted from:<br><br>
+            <table>
+                <tr>
+                    <td>
+                        Wallet
+                    </td>
+                    <td>
+                        <input type="radio" id="from" name="wallet">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bank Account
+                    </td>
+                    <td>
+                        <input type="radio" id="from" name="bank">
+                    </td>
+                </tr>
+            </table><br>
+            <button class="btn-sub">Procced</button><br><br>
+        </div>
     </center>
     <br><br>
     <div class="footer" style="background-color: rgb(34, 35, 54); color:white;">
@@ -110,10 +116,10 @@
                             Policy</a></td>
                 </tr>
             </table>
-    
+
         </center>
     </div>
-    
+
     <script>
         function openmenu() {
             document.getElementById("mymenu").style.width = "16%";

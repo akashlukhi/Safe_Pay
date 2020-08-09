@@ -140,3 +140,27 @@ a:hover {
     outline: none;
     transition: all 400ms;
   }
+  .slideshow-container {
+    margin-top: -2.5%;
+    max-width: 100%;
+    background-color: white;
+}
+
+.slide {
+    background-color: white;
+    
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+
+
+
