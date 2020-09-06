@@ -2,6 +2,8 @@
 
 <head>
   <title>Log in</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="assets/css/menu.css" rel="stylesheet">
   <link href="assets/css/form.css" rel="stylesheet">
@@ -43,18 +45,57 @@
   </h3>
   <div class="box" style="margin-left: 24%">
     <center>
-      <label>Email-id:</label>
-      <input type="text" name="email-id" id="email" placeholder="Enter Email-id" required><br>
-      <label>Password:</label>
-      <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
-    <button class="btn-sub">Log in</button><br><br>
-  
-      <a href="signup.html">Create Account</a>
-      <a href="#">Forget Password?</a>
+        <form class="needs-validation"  action="./index.html" novalidate>
+          <table class="table table-borderless" align="center" style="border: 0;">
+              <tr>
+                  <td colspan="2">
+                      <i class='far fa-user' style='font-size:86px;color: antiquewhite;'></i>
+                  </td>
+              </tr>
+              <tr>
+                  <div class="form-row">
+                      <td>User Id:</td>
+                      <td><input class="form-control" type="text"  placeholder="Enter email_id" name="mail"required></td>
+                      <div class="valid-tooltip"> Looks good! </div>
+                      <div class="invalid-tooltip">Name is required! </div>
+                  </div>
+              </tr>
+              <tr>
+                  <div class="form-row">
+                      <td>Password:</td>
+                      <td><input class="form-control" type="password" placeholder="Enter your created MPIN" name="psw" required></td>
+                      <div class="valid-tooltip"> Looks good! </div>
+                      <div class="invalid-tooltip">Password is required! </div>
+                  </div>
+              </tr>
+          </table>
+              
+              <input type="submit" class="btn-sub" value="Generate OTP">
+              <a href="signup.html">Add Account</a></span>
+      </form>
       <br><br>
     </center>
   </div>
   </div>
+  <script>
+      (function () {
+          'use strict';
+          window.addEventListener('load', function () {
+              // Get the forms we want to add validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function (form) {
+                  form.addEventListener('submit', function (event) {
+                      if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                  }, false);
+              });
+          }, false);
+      })();
+  </script>
 </body>  
 </html>
 
