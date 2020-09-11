@@ -3,7 +3,8 @@
 <head>
   <title>Log in</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="assets/css/menu.css" rel="stylesheet">
   <link href="assets/css/form.css" rel="stylesheet">
@@ -11,97 +12,109 @@
 </head>
 
 <body>
-
-    <div class="menu" style="z-index:1000;">
-        <a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
-            Menu</span></a>
-        <a href="login.html">Log In/Sign Up</a>
-        <a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
-        <a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
-        <a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
-        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
+  <div class="menu" style="z-index:1000;">
+		<a onclick="openmenu()" style="float: left;cursor:pointer; color:white;"><i class="fa fa-bars"></i><span></span>
+			Menu</span></a>
+		<a href="login.html">Log In/Sign Up</a>
+		<a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
+		<a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
+		<a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
+		<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
+	</div>
+  <br><br>
+  <div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
+    <div class="overlay-content">
+      <center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
+      &nbsp;<br><br>
+      <a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
+      <a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
+        Payment History</a>
+      <a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
+        Password</a>
+      <a href="#" id="expand"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money
+        Transer</a>
+      <div class="options hidden">
+        <a href="toaccount.html" style="margin: 0% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+            class="fa fa-angle-double-right" aria-hidden="true"></i>
+          To Account</a>
+        <a href="tocontact.html" style="margin: 5% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+            class="fa fa-angle-double-right" aria-hidden="true"></i>
+          To Contact</a>
+        <a href="toself.html" style="margin: 5% 0% 4% 22%; padding:0%; font-size:16px;" class="span"><i
+            class="fa fa-angle-double-right" aria-hidden="true"></i>
+          To Self</a>
+      </div>
+      <a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
+        Check Balance</a>
+      <a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
+        Money</a>
+      <a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry" aria-hidden="true"></i>Polices</a>
     </div>
-    <br><br>
-    <div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
-        <div class="overlay-content">
-            <center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
-            &nbsp;<br><br>
-            <a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
-            <a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
-                Payment History</a>
-            <a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
-                Password</a>
-            <a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
-            <a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
-                Check Balance</a>
-            <a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
-                Money</a>
-            <a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
-                    aria-hidden="true"></i>Polices</a>
-        </div>
-    </div>
+  </div>
   <h3 class="title">
     <span>LOG</span> IN
   </h3>
   <div class="box" style="margin-left: 24%">
     <center>
-        <form class="needs-validation"  action="./index.html" novalidate>
-          <table class="table table-borderless" align="center" style="border: 0;">
-              <tr>
-                  <td colspan="2">
-                      <i class='far fa-user' style='font-size:86px;color: antiquewhite;'></i>
-                  </td>
-              </tr>
-              <tr>
-                  <div class="form-row">
-                      <td>User Id:</td>
-                      <td><input class="form-control" type="text"  placeholder="Enter email_id" name="mail"required></td>
-                      <div class="valid-tooltip"> Looks good! </div>
-                      <div class="invalid-tooltip">Name is required! </div>
-                  </div>
-              </tr>
-              <tr>
-                  <div class="form-row">
-                      <td>Password:</td>
-                      <td><input class="form-control" type="password" placeholder="Enter your created MPIN" name="psw" required></td>
-                      <div class="valid-tooltip"> Looks good! </div>
-                      <div class="invalid-tooltip">Password is required! </div>
-                  </div>
-              </tr>
-          </table>
-              
-              <input type="submit" class="btn-sub" value="Generate OTP">
-              <a href="signup.html">Add Account</a></span>
+      <form class="needs-validation" action="./index.html" novalidate>
+        <table class="table table-borderless" align="center" style="border: 0; text-align:center;">
+
+          <tr>
+            <td><br><label for="mail"><b>Email ID:</b></label></td>
+            <td><input class="form-control" type="text" placeholder="Enter email_id" name="mail" required></td>
+          </tr>
+          <tr>
+            <td><br><label for="psw"><b>MPIN:</b></label></td>
+            <td><input class="form-control" type="password" placeholder="Enter your created MPIN" name="psw" required>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="text-align: center;"><button class="btn-sub">Log in</button><br><br></td>
+          </tr>
+          <tr>
+            <td> <a href="signup.html">Create Account</a></td>
+            <td style="text-align: center;"><a href="#">Forget Password?</a></td>
+          </tr>
+
+        </table>
+
+
+        <br><br>
       </form>
-      <br><br>
     </center>
   </div>
   </div>
   <script>
-      (function () {
-          'use strict';
-          window.addEventListener('load', function () {
-              // Get the forms we want to add validation styles to
-              var forms = document.getElementsByClassName('needs-validation');
-              // Loop over them and prevent submission
-              var validation = Array.prototype.filter.call(forms, function (form) {
-                  form.addEventListener('submit', function (event) {
-                      if (form.checkValidity() === false) {
-                          event.preventDefault();
-                          event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                  }, false);
-              });
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
           }, false);
-      })();
+        });
+      }, false);
+    })();
+    function openmenu() {
+      document.getElementById("mymenu").style.width = "16%";
+    }
+    function closemenu() {
+      document.getElementById("mymenu").style.width = "0%";
+    }
+    const expand = document.getElementById('expand');
+    const options = document.querySelector('.options');
+    expand.addEventListener('click', () => {
+      options.classList.toggle('hidden');
+    });
   </script>
-</body>  
+</body>
+
 </html>
-
-
-
-
-
-
-  

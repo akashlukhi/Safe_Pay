@@ -8,35 +8,46 @@
 </head>
 
 <body>
-	
-        <div class="menu" style="z-index:1000;">
-                <a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
-                    Menu</span></a>
-                <a href="login.html">Log In/Sign Up</a>
-                <a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
-                <a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
-                <a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
-                <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
-            </div>
-            <br><br>
-            <div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
-                <div class="overlay-content">
-                    <center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
-                    &nbsp;<br><br>
-                    <a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
-                    <a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
-                        Payment History</a>
-                    <a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
-                        Password</a>
-                    <a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
-                    <a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
-                        Check Balance</a>
-                    <a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
-                        Money</a>
-                    <a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
-                            aria-hidden="true"></i>Polices</a>
-                </div>
-            </div>
+    <div class="menu" style="z-index:1000;">
+		<a onclick="openmenu()" style="float: left;cursor:pointer; color:white;"><i class="fa fa-bars"></i><span></span>
+			Menu</span></a>
+		<a href="login.html">Log In/Sign Up</a>
+		<a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
+		<a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
+		<a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
+		<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
+	</div>
+	<br><br>
+	<div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
+		<div class="overlay-content">
+			<center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
+			&nbsp;<br><br>
+			<a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
+			<a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
+				Payment History</a>
+			<a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
+				Password</a>
+			<a href="#" id="expand"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money
+				Transer</a>
+			<div class="options hidden">
+				<a href="toaccount.html" style="margin: 0% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Account</a>
+				<a href="tocontact.html" style="margin: 5% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Contact</a>
+				<a href="toself.html" style="margin: 5% 0% 4% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Self</a>
+			</div>
+			<a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
+				Check Balance</a>
+			<a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
+				Money</a>
+			<a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
+					aria-hidden="true"></i>Polices</a>
+		</div>
+	</div>
     <br><br>
     <center>
             <img style="border-radius: 50%; width:100px; border:4px solid transparen; border-color:cornflowerblue;" src="assets/img/aboutme.jpg">
@@ -159,6 +170,11 @@
         function closemenu() {
             document.getElementById("mymenu").style.width = "0%";
         }
+        const expand = document.getElementById('expand');
+		const options = document.querySelector('.options');
+		expand.addEventListener('click', () => {
+			options.classList.toggle('hidden');
+		});
     </script>
 </body>
 

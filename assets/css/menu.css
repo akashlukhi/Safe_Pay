@@ -76,3 +76,26 @@ a:hover {
 .overlay a:hover, .overlay a:focus {
   color: rgb(62, 167, 236);
 }
+
+.hide {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 600ms;
+}.box {
+  transition:  all 600ms;
+}.options {
+  color: #eee;
+  height:  100%;
+  transition: all 400ms,height 400ms;
+}
+.options.hidden {
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  height: 0;
+  transition: all 400ms,height 400ms;
+}
+.span {
+  padding: 5px 45px;
+  
+}

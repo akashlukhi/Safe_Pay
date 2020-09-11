@@ -2,65 +2,77 @@
 
 <head>
     <title>Check Balance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/css/menu.css" rel="stylesheet">
     <link href="assets/css/form.css" rel="stylesheet">
 </head>
 
 <body>
-	
-        <div class="menu" style="z-index:1000;">
-                <a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
-                    Menu</span></a>
-                <a href="login.html">Log In/Sign Up</a>
-                <a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
-                <a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
-                <a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
-                <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
-            </div>
-            <br><br>
-            <div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
-                <div class="overlay-content">
-                    <center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
-                    &nbsp;<br><br>
-                    <a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
-                    <a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
-                        Payment History</a>
-                    <a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
-                        Password</a>
-                    <a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
-                    <a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
-                        Check Balance</a>
-                    <a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
-                        Money</a>
-                    <a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
-                            aria-hidden="true"></i>Polices</a>
-                </div>
-            </div>
+    <div class="menu" style="z-index:1000;">
+		<a onclick="openmenu()" style="float: left;cursor:pointer; color:white;"><i class="fa fa-bars"></i><span></span>
+			Menu</span></a>
+		<a href="login.html">Log In/Sign Up</a>
+		<a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
+		<a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
+		<a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
+		<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
+	</div>
+	<br><br>
+	<div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
+		<div class="overlay-content">
+			<center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
+			&nbsp;<br><br>
+			<a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
+			<a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
+				Payment History</a>
+			<a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
+				Password</a>
+			<a href="#" id="expand"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money
+				Transer</a>
+			<div class="options hidden">
+				<a href="toaccount.html" style="margin: 0% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Account</a>
+				<a href="tocontact.html" style="margin: 5% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Contact</a>
+				<a href="toself.html" style="margin: 5% 0% 4% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Self</a>
+			</div>
+			<a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
+				Check Balance</a>
+			<a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
+				Money</a>
+			<a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
+					aria-hidden="true"></i>Polices</a>
+		</div>
+	</div>
     <h3 class="title">
-            <span>Check </span>Your balance
-        </h3>
+        <span>Your </span> Balance
+    </h3>
     <center>
-        <div class="box">
-            <table>
-                <tr>
-                    <td>
-                        Wallet
-                    </td>
-                    <td>
-                        <input type="radio" id="from" name="wallet">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Bank Account
-                    </td>
-                    <td>
-                        <input type="radio" id="from" name="bank">
-                    </td>
-                </tr>
-            </table><br>
-            <button class="btn-sub">Check Balance</button><br><br></div>
+
+        <div class="jumbotron">
+            <h1>Your Money: <input type="text" readonly value="1200"></h1>
+            <br><br>
+            <h3 class="title">
+                    <span>Your </span> Wallet Limit
+                </h3><br><br>
+                
+                <div class="progress" style="width: 500px;box-shadow: 3px 3px 3px #000000;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                        aria-valuemax="100" style="width:35%; background-color:red;">
+                        <span class="sr-only">BALANCE LIMIT</span>
+                    </div>
+                </div>
+            
+        </div>
+        </div>
     </center>
     <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
     <div class="footer" style="background-color: rgb(34, 35, 54); color:white;">
@@ -92,10 +104,10 @@
                             Policy</a></td>
                 </tr>
             </table>
-    
+
         </center>
     </div>
-    
+
     <script>
         function openmenu() {
             document.getElementById("mymenu").style.width = "16%";
@@ -103,6 +115,12 @@
         function closemenu() {
             document.getElementById("mymenu").style.width = "0%";
         }
+        const expand = document.getElementById('expand');
+		const options = document.querySelector('.options');
+		expand.addEventListener('click', () => {
+			options.classList.toggle('hidden');
+		});
     </script>
 </body>
+
 </html>

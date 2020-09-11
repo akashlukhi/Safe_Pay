@@ -5,13 +5,16 @@
 	<link href="assets/css/index.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="assets/css/menu.css" rel="stylesheet">
+	<style>
+
+	</style>
 </head>
 
 <body>
-	<div class="header">
+	<!-- <div class="header">
 		<h1>Safe Pay</h1>
 		<img style="margin-top: 10px; " src="assets/img/ewallet.jpeg" height="40px" width="180px">
-	</div>
+	</div> -->
 	<div class="menu" style="z-index:1000;">
 		<a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
 			Menu</span></a>
@@ -29,152 +32,198 @@
 			<a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
 			<a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
 				Payment History</a>
-			<a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change Password</a>
-			<a href="#"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money Transer</a>
-			<a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i> Check Balance</a>
-			<a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request Money</a>
+			<a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
+				Password</a>
+			<a href="#" id="expand"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money
+				Transer</a>
+			<div class="options hidden">
+				<a href="toaccount.html" style="margin: 0% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Account</a>
+				<a href="tocontact.html" style="margin: 5% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Contact</a>
+				<a href="toself.html" style="margin: 5% 0% 4% 22%; padding:0%; font-size:16px;" class="span"><i
+						class="fa fa-angle-double-right" aria-hidden="true"></i>
+					To Self</a>
+			</div>
+			<a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
+				Check Balance</a>
+			<a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
+				Money</a>
 			<a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
 					aria-hidden="true"></i>Polices</a>
 		</div>
 	</div>
-	
+	<div class="home-inner">
+		<div class="container containt">
+			<center>
+				<h1>WELCOME TO THE SAFE PAY</h1>
+				<h3>keep connecting with us</h3>
+				<a class="btn  btn-lg" href="#service">Our Services</a>
+			</center>
+		</div>
+	</div>
+
 	<div class="slideshow-container">
 
 		<div class="mySlides fade">
-			<img src="./assets/img/slide1.jpg.webp" style="width:100%; height: 550px;background-size: cover;">			
+			<img src="./assets/img/slide3.jpg"
+				style="width:80%; margin-top:5%; margin-left:10%; margin-right:10%; height: 300px; border-radius: 10px; background-size: cover;">
 		</div>
 
 		<div class="mySlides fade">
-			<img src="./assets/img/slide2.jpg" style="width:100%; height: 550px;background-size: cover;">			
+			<img src="./assets/img/slide2.jpg.webp"
+				style="width:80%; margin-top:5%; margin-left:10%; margin-right:10%; height: 300px; border-radius: 10px; background-size: cover;">
 		</div>
 
 		<div class="mySlides fade">
-			<img src="./assets/img/slide3.jpg" style="width:100%; height: 550px;background-size: cover;">			
+			<img src="./assets/img/slide1.PNG"
+				style="width:80%; margin-top:5%; margin-left:10%; margin-right:10%; height: 300px; border-radius: 10px; background-size: cover;">
+		</div>
+		<div class="mySlides fade">
+			<img src="./assets/img/slide4.jpg"
+				style="width:80%; margin-top:5%; margin-left:10%; margin-right:10%; height: 300px; border-radius: 10px; background-size: cover;">
 		</div>
 
-	</div>
-	<div style="text-align:center">
+		<br>
+		<div style="text-align:center">
 			<span class="dot" onclick="currentSlide(1)"></span>
 			<span class="dot" onclick="currentSlide(2)"></span>
 			<span class="dot" onclick="currentSlide(3)"></span>
-		</div>
-		<br><br>
- 
-	<center>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div><br>
+	</div>
 
-		<h3 class="title">
-			<span>Recharge &</span>
-			Bill Pay
-		</h3>
-		<div class="box">
-			<center>
-				&nbsp;&nbsp;&nbsp;<img src="assets/img/mobile.jpg" height="90px" width="80px"
-					style="margin-right:30px"><br><br>
-				<p style="margin-right: 8px">A prepaid mobile device is a mobile device such as a phone for which credit
-					is purchased in advance of service use.</p><br><br>
-				<button class="btn"><a href="mobile_recharge.html"><b>Mobile Recharge</b></a></button>
-			</center>
+	<center>
+		<div id="service">
+			<br><br>
+
+			<h3 class="title">
+				<span>Recharge &</span>
+				Bill Pay
+			</h3>
+			<div class="effect">
+				<div class="box hide">
+					<center>
+						&nbsp;&nbsp;&nbsp;<img src="assets/img/mobile.jpg" height="90px" width="80px"
+							style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">A prepaid mobile device is a mobile device such as a phone for
+							which
+							credit
+							is purchased in advance of service use.</p><br><br>
+						<button class="btn"><a href="mobile_recharge.html"><b>Mobile Recharge</b></a></button>
+					</center>
+				</div>
+				<div class="box hide">
+					<center>
+						&nbsp;&nbsp;&nbsp;
+						<img src="assets/img/bus.PNG" height="90px" width="80px" style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">Book bus tickets online from SafePay booking bus
+							operators. Choose your bus ticket booking and enjoy.</p><br><br>
+						<button class="btn"><a href="bus_ticket.html"><b>Bus Ticket</b></a></button>
+					</center>
+				</div>
+				<div class="box hide">
+					<center>
+						&nbsp;&nbsp;&nbsp;
+						<img src="assets/img/train.jpg" height="90px" width="100px" style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">Enjoy free meal by booking IRCTC train tickets with SafePay and
+							have
+							the
+							Happy journy.</p><br><br>
+						<button class="btn"><a href="train_ticket.html"><b>Train Ticket</b></a></button>
+					</center>
+				</div>
+				<div class="box hide">
+					<center>
+						&nbsp;&nbsp;&nbsp;
+						<img src="assets/img/movie.jpg" height="90px" width="110px" style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">Online Movie Ticket Booking enable user to buy movie tickets online
+							and
+							information about cinemas.</p><br><br>
+						<button class="btn"><a href="movie_ticket.html"><b>Movie Ticket</b></a></button>
+					</center>
+				</div>
+				<div class="box hide">
+					<center>
+						&nbsp;&nbsp;&nbsp;<img src="assets/img/bulb.jpg" height="90px" width="90px"
+							style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">Electronic bill payment is a feature of mobile banking. In addition
+							to the bill payment facility.</p> <br><br>
+						<button class="btn"><a href="electricity_bill.html"><b>Electricity Bill</b></a></button>
+					</center>
+				</div>
+				<div class="box hide">
+					<center>
+						&nbsp;&nbsp;&nbsp;
+						<img src="assets/img/water.jpg" height="90px" width="80px" style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">No more delays in bill payment, pay water bill online here. SafePay
+							offers
+							you
+							the secure payment platform.</p><br><br>
+						<button class="btn"><a href="water_bill.html"><b>Watter Bill</b></a></button>
+					</center>
+				</div>
+				<div class="box hide">
+					<center>
+						&nbsp;&nbsp;&nbsp;
+						<img src="assets/img/credit.jpg" height="90px" width="110px" style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">Make Online Credit Card Payment at SafePay. Don't worry about your
+							due
+							dates for Credit Card bill payment.</p><br><br>
+						<button class="btn"><a href="card_bill.html"><b>Credit card Bill</b></a></button>
+					</center>
+				</div>
+				<div class="box hide">
+					<center>
+						&nbsp;&nbsp;&nbsp;
+						<img src="assets/img/pipe.jpg" height="90px" width="100px" style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">No more delays in bill payment, pay gas bill online here. SafePay
+							offers
+							you
+							the secure payment platform.</p><br><br>
+						<button class="btn"><a href="gas_bill.html"><b>Piped Gas Bill</b></a></button>
+					</center>
+				</div>
+			</div>
 		</div>
-		<div class="box">
-			<center>
-				&nbsp;&nbsp;&nbsp;
-				<img src="assets/img/bus.PNG" height="90px" width="80px" style="margin-right:30px"><br><br>
-				<p style="margin-right: 8px">Book bus tickets online from SafePay booking bus
-					operators. Choose your bus ticket booking and enjoy.</p><br><br>
-				<button class="btn"><a href="bus_ticket.html"><b>Bus Ticket</b></a></button>
-			</center>
-		</div>
-		<div class="box">
-			<center>
-				&nbsp;&nbsp;&nbsp;
-				<img src="assets/img/train.jpg" height="90px" width="100px" style="margin-right:30px"><br><br>
-				<p style="margin-right: 8px">Enjoy free meal by booking IRCTC train tickets with SafePay and have the
-					Happy journy.</p><br><br>
-				<button class="btn"><a href="train_ticket.html"><b>Train Ticket</b></a></button>
-			</center>
-		</div>
-		<div class="box">
-			<center>
-				&nbsp;&nbsp;&nbsp;
-				<img src="assets/img/movie.jpg" height="90px" width="110px" style="margin-right:30px"><br><br>
-				<p style="margin-right: 8px">Online Movie Ticket Booking enable user to buy movie tickets online and
-					information about cinemas.</p><br><br>
-				<button class="btn"><a href="movie_ticket.html"><b>Movie Ticket</b></a></button>
-			</center>
-		</div>
-		<div class="box">
-			<center>
-				&nbsp;&nbsp;&nbsp;<img src="assets/img/bulb.jpg" height="90px" width="90px"
-					style="margin-right:30px"><br><br>
-				<p style="margin-right: 8px">Electronic bill payment is a feature of mobile banking. In addition
-					to the bill payment facility.</p> <br><br>
-				<button class="btn"><a href="electricity_bill.html"><b>Electricity Bill</b></a></button>
-			</center>
-		</div>
-		<div class="box">
-			<center>
-				&nbsp;&nbsp;&nbsp;
-				<img src="assets/img/water.jpg" height="90px" width="80px" style="margin-right:30px"><br><br>
-				<p style="margin-right: 8px">No more delays in bill payment, pay water bill online here. SafePay offers
-					you
-					the secure payment platform.</p><br><br>
-				<button class="btn"><a href="water_bill.html"><b>Watter Bill</b></a></button>
-			</center>
-		</div>
-		<div class="box">
-			<center>
-				&nbsp;&nbsp;&nbsp;
-				<img src="assets/img/credit.jpg" height="90px" width="110px" style="margin-right:30px"><br><br>
-				<p style="margin-right: 8px">Make Online Credit Card Payment at SafePay. Don't worry about your due
-					dates for Credit Card bill payment.</p><br><br>
-				<button class="btn"><a href="card_bill.html"><b>Credit card Bill</b></a></button>
-			</center>
-		</div>
-		<div class="box">
-			<center>
-				&nbsp;&nbsp;&nbsp;
-				<img src="assets/img/pipe.jpg" height="90px" width="100px" style="margin-right:30px"><br><br>
-				<p style="margin-right: 8px">No more delays in bill payment, pay gas bill online here. SafePay offers
-					you
-					the secure payment platform.</p><br><br>
-				<button class="btn"><a href="gas_bill.html"><b>Piped Gas Bill</b></a></button>
-			</center>
-		</div>
-		<br><br><br><br><br><br><br>
+		<br><br><br>
 	</center>
 	<center>
 		<section id="help">
 			<br><br><br><br>
 			<hr>
 			<div class="parallax">
-				<table border="0" width="1350px">
+				<table border="0" width="100%">
 					<tr>
 						<td>
 							<center>
-								<img src="assets/img/wallet.jpg" style="border-radius: 50%; width:100px"><br><br>
-								<font size="+2"><b>Wallets</b></font><br><br>
-								850
+								<img src="assets/img/wallet.png" style="border-radius: 10%; width:120px"><br><br>
+								<font size="+2"><b style="color: rgb(211, 31, 55);">Wallets</b></font><br><br>
+								<div class="count" style="font-size:26px; color:white;">850</font>
+								</div>
 							</center>
 						</td>
 						<td>
 							<center>
-								<img src="assets/img/transfer.jpg" style="border-radius: 50%; width:100px	"><br><br>
-								<font size="+2"><b>Transections</b></font><br><br>
-								3250
+								<img src="assets/img/transfer.png" style="border-radius: 50%; width:110px	"><br><br>
+								<font size="+2"><b style="color: rgb(211, 31, 55);">Transections</b></font><br><br>
+								<div class="count" style="font-size:26px; color:white;">1023</div>
 							</center>
 						</td>
 						<td>
 							<center>
-								<img src="assets/img/operator.jpg" style="border-radius: 50%; width:100px	"><br><br>
-								<font size="+2"><b>Operators</b></font><br><br>
-								132
+								<img src="assets/img/operator.png" style="border-radius: 50%; width:110px	"><br><br>
+								<font size="+2"><b style="color: rgb(211, 31, 55);">Operators</b></font><br><br>
+								<div class="count" style="font-size:26px; color:white;">830</div>
 							</center>
 						</td>
 						<td>
 							<center>
-								<img src="assets/img/group.jpg" style="border-radius: 50%; width:100px	"><br><br>
-								<font size="+2"><b>Clients</b></font><br><br>
-								624
+								<img src="assets/img/group.png" style="border-radius: 50%; width:150px	"><br><br>
+								<font size="+2"><b style="color: rgb(211, 31, 55);">Clients</b></font><br><br>
+								<div class="count" style="font-size:26px; color:white;">950</div>
 							</center>
 						</td>
 					</tr>
@@ -364,7 +413,7 @@
 	</div>
 
 	<script>
-			var slideIndex = 0;
+		var slideIndex = 0;
 		showSlides();
 		function openmenu() {
 			document.getElementById("mymenu").style.width = "16%";
@@ -386,8 +435,46 @@
 			}
 			slides[slideIndex - 1].style.display = "block";
 			dots[slideIndex - 1].className += " active";
-			setTimeout(showSlides, 5000); 
+			setTimeout(showSlides, 5000);
 		}
+		const boxes = document.querySelectorAll('.effect .box');
+		const o = new IntersectionObserver((e, o) => {
+			e.forEach(en => {
+				if (en.isIntersecting) {
+					en.target.classList.remove('hide');
+				}
+			})
+		});
+		boxes.forEach(box => {
+			o.observe(box);
+		});
+		const expand = document.getElementById('expand');
+		const options = document.querySelector('.options');
+		expand.addEventListener('click', () => {
+			options.classList.toggle('hidden');
+		});
+		const counts = document.querySelectorAll('.count');
+		const speed = 10;
+		const val = [];
+		counts.forEach(count => {
+			val.push(+count.textContent);
+		});
+		console.log(val);
+
+		counts.forEach((count, index) => {
+			let start = 0;
+			count.textContent = 0;
+
+			let interval = setInterval(() => {
+				if (+count.textContent >= val[index]) {
+					clearInterval(interval);
+					return
+				}
+				start += speed;
+				count.textContent = start;
+			}, 50)
+		});
+z
 	</script>
 </body>
 
