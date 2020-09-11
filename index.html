@@ -3,6 +3,9 @@
 <head>
 	<title>Safe Pay</title>
 	<link href="assets/css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="assets/css/menu.css" rel="stylesheet">
 	<style>
@@ -16,7 +19,7 @@
 		<img style="margin-top: 10px; " src="assets/img/ewallet.jpeg" height="40px" width="180px">
 	</div> -->
 	<div class="menu" style="z-index:1000;">
-		<a onclick="openmenu()" style="float: left;cursor:pointer"><i class="fa fa-bars"></i><span></span>
+		<a onclick="openmenu()" style="float: left;cursor:pointer; color:white;"><i class="fa fa-bars"></i><span></span>
 			Menu</span></a>
 		<a href="login.html">Log In/Sign Up</a>
 		<a href="#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
@@ -60,7 +63,7 @@
 			<center>
 				<h1>WELCOME TO THE SAFE PAY</h1>
 				<h3>keep connecting with us</h3>
-				<a class="btn  btn-lg" href="#service">Our Services</a>
+				<a class="btn1  btn-lg" style="color: aliceblue;" href="#service">Our Services</a>
 			</center>
 		</div>
 	</div>
@@ -88,8 +91,8 @@
 			<span class="dot" onclick="currentSlide(2)"></span>
 			<span class="dot" onclick="currentSlide(3)"></span>
 		</div><br>
-	</div>
 
+	</div>
 	<center>
 		<div id="service">
 			<br><br>
@@ -101,13 +104,13 @@
 			<div class="effect">
 				<div class="box hide">
 					<center>
-						&nbsp;&nbsp;&nbsp;<img src="assets/img/mobile.jpg" height="90px" width="80px"
-							style="margin-right:30px"><br><br>
-						<p style="margin-right: 8px">A prepaid mobile device is a mobile device such as a phone for
+						&nbsp;&nbsp;&nbsp;
+						<img src="assets/img/mobile.jpg" height="90px" width="80px" style="margin-right:30px"><br><br>
+						<p style="margin-right: 8px">A prepaid mobile device is a mobile for
 							which
 							credit
-							is purchased in advance of service use.</p><br><br>
-						<button class="btn"><a href="mobile_recharge.html"><b>Mobile Recharge</b></a></button>
+							is purchased in advance of service use.</p>
+						<button class="btn1"><a href="mobile_recharge.html"><b> Recharge</b></a></button>
 					</center>
 				</div>
 				<div class="box hide">
@@ -115,8 +118,8 @@
 						&nbsp;&nbsp;&nbsp;
 						<img src="assets/img/bus.PNG" height="90px" width="80px" style="margin-right:30px"><br><br>
 						<p style="margin-right: 8px">Book bus tickets online from SafePay booking bus
-							operators. Choose your bus ticket booking and enjoy.</p><br><br>
-						<button class="btn"><a href="bus_ticket.html"><b>Bus Ticket</b></a></button>
+							operators. Choose your bus ticket booking and enjoy.</p>
+						<button class="btn1"><a href="bus_ticket.html"><b>Bus Ticket</b></a></button>
 					</center>
 				</div>
 				<div class="box hide">
@@ -126,8 +129,8 @@
 						<p style="margin-right: 8px">Enjoy free meal by booking IRCTC train tickets with SafePay and
 							have
 							the
-							Happy journy.</p><br><br>
-						<button class="btn"><a href="train_ticket.html"><b>Train Ticket</b></a></button>
+							Happy journy.</p>
+						<button class="btn1"><a href="train_ticket.html"><b>Train Ticket</b></a></button>
 					</center>
 				</div>
 				<div class="box hide">
@@ -136,8 +139,8 @@
 						<img src="assets/img/movie.jpg" height="90px" width="110px" style="margin-right:30px"><br><br>
 						<p style="margin-right: 8px">Online Movie Ticket Booking enable user to buy movie tickets online
 							and
-							information about cinemas.</p><br><br>
-						<button class="btn"><a href="movie_ticket.html"><b>Movie Ticket</b></a></button>
+							information about cinemas.</p>
+						<button class="btn1"><a href="movie_ticket.html"><b>Movie Ticket</b></a></button>
 					</center>
 				</div>
 				<div class="box hide">
@@ -145,19 +148,19 @@
 						&nbsp;&nbsp;&nbsp;<img src="assets/img/bulb.jpg" height="90px" width="90px"
 							style="margin-right:30px"><br><br>
 						<p style="margin-right: 8px">Electronic bill payment is a feature of mobile banking. In addition
-							to the bill payment facility.</p> <br><br>
-						<button class="btn"><a href="electricity_bill.html"><b>Electricity Bill</b></a></button>
+							to the bill payment facility.</p>
+						<button class="btn1"><a href="electricity_bill.html"><b>Electricity Bill</b></a></button>
 					</center>
 				</div>
 				<div class="box hide">
 					<center>
 						&nbsp;&nbsp;&nbsp;
 						<img src="assets/img/water.jpg" height="90px" width="80px" style="margin-right:30px"><br><br>
-						<p style="margin-right: 8px">No more delays in bill payment, pay water bill online here. SafePay
+						<p style="margin-right: 8px">No delays in bill payment, pay water bill online here. SafePay
 							offers
 							you
-							the secure payment platform.</p><br><br>
-						<button class="btn"><a href="water_bill.html"><b>Watter Bill</b></a></button>
+							the secure payment platform.</p>
+						<button class="btn1"><a href="water_bill.html"><b>Watter Bill</b></a></button>
 					</center>
 				</div>
 				<div class="box hide">
@@ -166,8 +169,8 @@
 						<img src="assets/img/credit.jpg" height="90px" width="110px" style="margin-right:30px"><br><br>
 						<p style="margin-right: 8px">Make Online Credit Card Payment at SafePay. Don't worry about your
 							due
-							dates for Credit Card bill payment.</p><br><br>
-						<button class="btn"><a href="card_bill.html"><b>Credit card Bill</b></a></button>
+							dates for Credit Card bill payment.</p>
+						<button class="btn1"><a href="card_bill.html"><b>Credit card Bill</b></a></button>
 					</center>
 				</div>
 				<div class="box hide">
@@ -177,8 +180,8 @@
 						<p style="margin-right: 8px">No more delays in bill payment, pay gas bill online here. SafePay
 							offers
 							you
-							the secure payment platform.</p><br><br>
-						<button class="btn"><a href="gas_bill.html"><b>Piped Gas Bill</b></a></button>
+							the secure payment platform.</p>
+						<button class="btn1"><a href="gas_bill.html"><b>Piped Gas Bill</b></a></button>
 					</center>
 				</div>
 			</div>
@@ -187,8 +190,8 @@
 	</center>
 	<center>
 		<section id="help">
-			<br><br><br><br>
-			<hr>
+			<br><br><br>
+
 			<div class="parallax">
 				<table border="0" width="100%">
 					<tr>
@@ -269,7 +272,7 @@
 
 		<section id="contact" style="margin-top: 20px;">
 			<br><br>
-			<hr>
+			<hr style="border-color:black; border-width:1px;">
 			<h3 class="title">
 				<span>Get</span>
 				In Touch
@@ -304,28 +307,31 @@
 				</tr>
 			</table>
 			<br>
-			<table>
+			<table width="100%">
 				<tr>
-					<td align="center"><input name="name" id="name" type="text" placeholder="Your Name*" required></td>
-					<td align="center"><input name="email" id="email" type="email" placeholder="Your Email*" required>
+					<td align="right"><input name="name" id="name" style="width: 68%" type="text"
+							placeholder="Your Name*" required></td>
+					<td align="left"><input name="email" id="email" type="email" style="width: 68%"
+							placeholder="Your Email*" required>
 					</td>
 				</tr>
 				<tr></tr>
 				<tr></tr>
 				<tr>
-					<td colspan="2"><input name="subject" style="width: 96%" id="subject" type="text"
+					<td colspan="2" align="center"><input name="subject" style="width: 70%" id="subject" type="text"
 							placeholder="Your Subject*" required></td>
 				</tr>
 				<tr></tr>
 				<tr></tr>
 				<tr>
-					<td colspan="2"><textarea name="comments" style="width: 96%" id="comments" rows="4"
-							placeholder="Your message..."></textarea></td>
+					<td colspan="2" align="center"><textarea name="comments" style="width: 70%; margin-top:0.9%;"
+							id="comments" rows="4" placeholder="Your message..."></textarea></td>
 				</tr>
 				<tr></tr>
 				<tr></tr>
 				<tr>
-					<td colspan="2" align="center"><button class="btn-sub">Send Feedback</button></td>
+					<td colspan="2" align="center"><button style="margin-top:0.9%;" class="btn-sub">Send
+							Feedback</button></td>
 				</tr>
 			</table>
 
@@ -333,7 +339,7 @@
 
 
 		<br><br>
-		<hr>
+		<hr style="border-color:black; border-width:1px;">
 
 		<section id="about">
 			<br><br>
@@ -376,7 +382,7 @@
 	<br>
 	<div class="footer" style="background-color: rgb(34, 35, 54); color:white;">
 		<center>
-			<table border="0" width="1400px" height="300px" style="margin-left: 5%">
+			<table border="0" width="100%" height="300px" style="margin-left: 2%">
 				<tr>
 					<td>
 						<font size="+3"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</font><br><br>
@@ -384,12 +390,12 @@
 					</td>
 					<td>
 						<font size="+3"><i class="fa fa-eercast" aria-hidden="true"></i> Status</font><br><br>
-						Find out the service status of SafePay and its <br>related services.
+						Find out the service status of SafePay and its related services.
 					</td>
 					<td>
-						<br>
+
 						<font size="+3"><i class="fa fa-quora" aria-hidden="true"></i> FAQ</font><br><br>
-						Read the Frequently Asked Questions about SafePay <br>and see if your question made the list.
+						Read the FAQ about SafePay <br>and see if your question made the list.
 					</td>
 				</tr>
 				<tr>
@@ -398,8 +404,7 @@
 						<font size="+10"><i class="fa fa-handshake-o" aria-hidden="true"></i> Safe Pay</font>
 					</td>
 					<td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> SafePay E-Wallet 2020
-						&nbsp;&nbsp;-&nbsp;&nbsp; Devloped By Ak Lukhi&nbsp;&nbsp; - <a style="color: aliceblue"
-							herf="#about">About</a> - <a style="color: aliceblue;" href="policies.html">Privacy
+						&nbsp;&nbsp;-&nbsp;&nbsp; Devloped By Ak Lukhi&nbsp;&nbsp; -  <a style="color: aliceblue;" href="policies.html">Privacy
 							Policy</a></td>
 				</tr>
 			</table>
@@ -469,7 +474,7 @@
 				count.textContent = start;
 			}, 50)
 		});
-z
+		z
 	</script>
 </body>
 

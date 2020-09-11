@@ -12,67 +12,69 @@
 
 <body>
     <div class="menu" style="z-index:1000;">
-		<a onclick="openmenu()" style="float: left;cursor:pointer; color:white;"><i class="fa fa-bars"></i><span></span>
-			Menu</span></a>
-		<a href="login.html">Log In/Sign Up</a>
-		<a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
-		<a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
-		<a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
-		<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
-	</div>
-	<br><br>
-	<div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
-		<div class="overlay-content">
-			<center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
-			&nbsp;<br><br>
-			<a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
-			<a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
-				Payment History</a>
-			<a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
-				Password</a>
-			<a href="#" id="expand"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money
-				Transer</a>
-			<div class="options hidden">
-				<a href="toaccount.html" style="margin: 0% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
-						class="fa fa-angle-double-right" aria-hidden="true"></i>
-					To Account</a>
-				<a href="tocontact.html" style="margin: 5% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
-						class="fa fa-angle-double-right" aria-hidden="true"></i>
-					To Contact</a>
-				<a href="toself.html" style="margin: 5% 0% 4% 22%; padding:0%; font-size:16px;" class="span"><i
-						class="fa fa-angle-double-right" aria-hidden="true"></i>
-					To Self</a>
-			</div>
-			<a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
-				Check Balance</a>
-			<a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
-				Money</a>
-			<a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
-					aria-hidden="true"></i>Polices</a>
-		</div>
-	</div>
+        <a onclick="openmenu()" style="float: left;cursor:pointer; color:white;"><i class="fa fa-bars"></i><span></span>
+            Menu</span></a>
+        <a href="login.html">Log In/Sign Up</a>
+        <a href="index.html#help"><i class="fa fa-question-circle"></i> Help</a> &nbsp;
+        <a href="index.html#contact"><i class="fa fa-volume-control-phone"></i> Contact Us</a> &nbsp;
+        <a href="index.html#about"><i class="fa fa-address-card"></i> About </a> &nbsp;
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> &nbsp;
+    </div>
+    <br><br>
+    <div id="mymenu" class="overlay" style="z-index:10000;" onmouseleave="closemenu()">
+        <div class="overlay-content">
+            <center><img style="border-radius: 50%; width:100px" src="assets/img/aboutme.jpg"></center>
+            &nbsp;<br><br>
+            <a href="profile.html"><i style="padding-right: 6%" class="fa fa-user" aria-hidden="true"></i> Profile</a>
+            <a href="statementpage.html"><i style="padding-right: 6%" class="fa fa-history" aria-hidden="true"></i>
+                Payment History</a>
+            <a href="change_password.html"><i style="padding-right: 6%" class="fa fa-key" aria-hidden="true"></i> Change
+                Password</a>
+            <a href="#" id="expand"><i style="padding-right: 6%" class="fa fa-exchange" aria-hidden="true"></i> Money
+                Transer</a>
+            <div class="options hidden">
+                <a href="toaccount.html" style="margin: 0% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+                        class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    To Account</a>
+                <a href="tocontact.html" style="margin: 5% 0% 0% 22%; padding:0%; font-size:16px;" class="span"><i
+                        class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    To Contact</a>
+                <a href="toself.html" style="margin: 5% 0% 4% 22%; padding:0%; font-size:16px;" class="span"><i
+                        class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    To Self</a>
+            </div>
+            <a href="check_bal.html"><i style="padding-right: 6%" class="fa fa-credit-card" aria-hidden="true"></i>
+                Check Balance</a>
+            <a href="toreq.html"><i style="padding-right: 6%" class="fa fa-ticket" aria-hidden="true"></i> Request
+                Money</a>
+            <a href="policies.html"><i style="padding-right: 6%" class="fa fa-ravelry"
+                    aria-hidden="true"></i>Polices</a>
+        </div>
+    </div>
     <h3 class="title">
         <span>Online Gas</span> Bill Payment
     </h3>
     <center>
         <div class="box">
-            <a href="#" data-toggle="modal" data-target="#viewmodal"><font size="+1">View Sample Bill</font></a><br><br>
+            <a href="#" data-toggle="modal" data-target="#viewmodal">
+                <font size="+1">View Sample Bill</font>
+            </a><br><br>
             <div class="modal" id="viewmodal">
                 <div class="modal-dialog">
                     <div class="modal-content">
-    
+
                         <!-- Modal Header -->
                         <div class="modal-header">
                             <h4 class="modal-title">Gas Bill Sample</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
-    
+
                         <!-- Modal body -->
                         <div class="modal-body">
-                            <img src="./assets/img/Gasbill.jpeg" height="540px" width="400px" >
+                            <img src="./assets/img/Gasbill.jpeg" height="540px" width="400px">
                         </div>
-    
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -144,7 +146,7 @@
     <br><br>
     <div class="footer" style="background-color: rgb(34, 35, 54); color:white;">
         <center>
-            <table border="0" width="1400px" height="300px" style="margin-left: 5%">
+            <table border="0" width="100%" height="300px" style="margin-left: 2%">
                 <tr>
                     <td>
                         <font size="+3"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</font><br><br>
@@ -152,12 +154,12 @@
                     </td>
                     <td>
                         <font size="+3"><i class="fa fa-eercast" aria-hidden="true"></i> Status</font><br><br>
-                        Find out the service status of SafePay and its <br>related services.
+                        Find out the service status of SafePay and its related services.
                     </td>
                     <td>
-                        <br>
+
                         <font size="+3"><i class="fa fa-quora" aria-hidden="true"></i> FAQ</font><br><br>
-                        Read the Frequently Asked Questions about SafePay <br>and see if your question made the list.
+                        Read the FAQ about SafePay <br>and see if your question made the list.
                     </td>
                 </tr>
                 <tr>
@@ -166,15 +168,14 @@
                         <font size="+10"><i class="fa fa-handshake-o" aria-hidden="true"></i> Safe Pay</font>
                     </td>
                     <td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> SafePay E-Wallet 2020
-                        &nbsp;&nbsp;-&nbsp;&nbsp; Devloped By Ak Lukhi&nbsp;&nbsp; - <a style="color: aliceblue"
-                            herf="#about">About</a> - <a style="color: aliceblue;" href="policies.html">Privacy
+                        &nbsp;&nbsp;-&nbsp;&nbsp; Devloped By Ak Lukhi&nbsp;&nbsp; - <a style="color: aliceblue;"
+                            href="policies.html">Privacy
                             Policy</a></td>
                 </tr>
             </table>
 
         </center>
     </div>
-
     <script>
         function openmenu() {
             document.getElementById("mymenu").style.width = "16%";
@@ -183,10 +184,10 @@
             document.getElementById("mymenu").style.width = "0%";
         }
         const expand = document.getElementById('expand');
-		const options = document.querySelector('.options');
-		expand.addEventListener('click', () => {
-			options.classList.toggle('hidden');
-		});
+        const options = document.querySelector('.options');
+        expand.addEventListener('click', () => {
+            options.classList.toggle('hidden');
+        });
     </script>
 </body>
 

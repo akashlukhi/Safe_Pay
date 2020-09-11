@@ -11,7 +11,7 @@ html{
 
 .box{
     width: 260px;
-    height: 280px;
+    height: 310px;
     text-align: center;
     padding-left: .7%; 
     padding-top: 2%;
@@ -33,7 +33,7 @@ html{
   background-attachment: fixed;
   height: 750px;
   width: 100%;
-  margin-top: -2.7%;
+  margin-top: -5%;
 }
 
 .containt {
@@ -63,11 +63,14 @@ html{
 }
 .containt a{
   border-style: inset;
+  border-color: #bbb;
+  border-width: 4px;
   background:none;	
   border-radius: 0%;
 }
 .containt a:hover{
-  background-color: rgb(255, 254, 251);
+  color: black;
+  background-color: rgb(133, 131, 127);
   box-shadow: #333;
 }
 
@@ -175,7 +178,7 @@ a:hover {
     transition: all 400ms;
   }
 
-  .btn {
+  .btn1 {
     padding:10px;
     width: 190px;
     border:none;
@@ -186,7 +189,7 @@ a:hover {
     transition: all 400ms;
     outline: none;
   }
-  .btn:hover {
+  .btn1:hover {
     background: rgb(58, 61, 63);
     outline: none;
     transition: all 400ms;
