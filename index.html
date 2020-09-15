@@ -3,6 +3,7 @@
 <head>
 	<title>Safe Pay</title>
 	<link href="assets/css/index.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -61,7 +62,7 @@
 	<div class="home-inner">
 		<div class="container containt">
 			<center>
-				<h1>WELCOME TO THE SAFE PAY</h1>
+				<h1 id="target"></h1>
 				<h3>keep connecting with us</h3>
 				<a class="btn1  btn-lg" style="color: aliceblue;" href="#service">Our Services</a>
 			</center>
@@ -404,7 +405,8 @@
 						<font size="+10"><i class="fa fa-handshake-o" aria-hidden="true"></i> Safe Pay</font>
 					</td>
 					<td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> SafePay E-Wallet 2020
-						&nbsp;&nbsp;-&nbsp;&nbsp; Devloped By Ak Lukhi&nbsp;&nbsp; -  <a style="color: aliceblue;" href="policies.html">Privacy
+						&nbsp;&nbsp;-&nbsp;&nbsp; Devloped By Ak Lukhi&nbsp;&nbsp; - <a style="color: aliceblue;"
+							href="policies.html">Privacy
 							Policy</a></td>
 				</tr>
 			</table>
@@ -474,7 +476,13 @@
 				count.textContent = start;
 			}, 50)
 		});
-		z
+		var $message = 'WELCOME TO THE SAFE PAY'.split('').reverse();
+		var outputSlowly = setInterval(function () {
+			$('#target').append($message.pop());
+			if ($message.length === 0) {
+				clearInterval(outputSlowly);
+			}
+		}, 80);
 	</script>
 </body>
 
